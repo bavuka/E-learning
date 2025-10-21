@@ -18,8 +18,7 @@ class InstructorRegView(View):
              res.is_staff=True
              res.role="instructor"
              res.password=make_password(form.cleaned_data.get("password"))
-             print(res)
-             print(form)
+            
              res.save()
              return redirect("insreg")
              

@@ -6,10 +6,10 @@ class InstructorCreateForm(forms.ModelForm):
         model=User
         fields=["first_name","username","email","password"]
 
-        widgets={"first_name":forms.TextInput(attrs={"class":"form_control"}),
-                 "username":forms.TextInput(attrs={"class":"form_control"}),
-                 "email":forms.TextInput(attrs={"class":"form_control"}),
-                 "password":forms.PasswordInput(attrs={"class":"form_control"}),}
+        widgets={"first_name":forms.TextInput(attrs={"class":"form-control"}),
+                 "username":forms.TextInput(attrs={"class":"form-control"}),
+                 "email":forms.TextInput(attrs={"class":"form-control"}),
+                 "password":forms.PasswordInput(attrs={"class":"form-control"}),}
 
 
 
